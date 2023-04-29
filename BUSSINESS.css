@@ -1,0 +1,110 @@
+*{padding: 0;margin: 0;user-select: none;list-style:none;text-decoration:none;}
+.intro1{width: 100%;height: 100vh;display:none;}
+.intro1 #logoA{width: 100%;position:absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);height: 20vh;display: flex;justify-content:space-around;align-items:center;flex-direction:column;}
+.intro1 #logoA img{height: 75%;}
+.intro1 #logoA p{font-size:15px;color: #ccc;letter-spacing: 2px;}
+.intro2{width: 100%;height: 100vh;display: none;}
+.intro2 #logoB{z-index: 0;position:absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);display: flex;flex-direction: column;align-items: center;justify-content:center;}
+.intro2 #logoB p:nth-child(1){box-shadow:2px 2px 5px #aaa;}
+.intro2 #logoB p span{font-family: 'Baloo 2', cursive;padding: 5px 25px 0px 25px;font-size:50px;border: 1px solid #000;}
+.intro2 #logoB p span:nth-child(1){background-color: #000;color: #fff;}
+.intro2 #logoB p span:nth-child(2){color: #000;background-color: #fff;}
+.intro2 #logoB p:nth-child(2){margin-top:5px;margin-left: 22px;letter-spacing:15px;text-align: center;font-size:12px;font-family: 'Changa', sans-serif;}
+.home{width: 100%;height: 100vh;overflow: hidden;display:flex;justify-content:center;align-items:center;flex-direction:column;display:none;}
+.home #logoC{position: fixed;top: 0;right: 0;top: 15px;right: 15px;width: 50px;opacity: 0.1;}
+.home #bg{width: 100%;height: 100%;opacity:1;}
+.home #connect{border-radius: 10px;background-color:rgb(0,164,192,0.1);position: fixed;padding: 0px 15px;padding-bottom:7vh;bottom: 0px;right: 0px;display: flex;justify-content:center;align-items:center;flex-direction:column;}
+.home #connect #social a i{margin: 10px 0px;padding: 0;font-size: 20px;cursor: pointer;font-size: 15px;}
+.home #connect .fa-heart{animation: heartPump 1s 1s infinite linear normal;cursor: default;color: #a83f39;padding:3vh 0px;border-bottom:1px solid #fff;}
+.home #connect #social{display: flex;justify-content:center;align-items:center;flex-direction:column;display: none;}
+.home .form{width: 250px;height: 125px;position: fixed;top: 50%;left: 50%;transform: translate(150%,-25%);display: flex;justify-content:space-around;align-items:center;flex-direction:column;}
+.home .form button{cursor: pointer;background-color: rgb(0,0,0,0);color: rgb(50,92,130);padding: 10px 20px;letter-spacing:2px;outline: none;border: none;border: 1px solid rgb(186,217,98);}
+.home .form button:hover{transition-duration:0.5s;background-color:rgb(50,92,130);color:rgb(186,217,98);}
+.home .form label{width: 100%;text-align: center;color: rgb(98,40,62);}
+.home .form input{padding:10px 10%;text-align: center;border: none;width: 80%;outline: none;background-color: rgb(0,0,0,0);color: rgb(50,92,130);letter-spacing: 1px;}
+.home .form input:focus{text-align:left;}
+.home #caption{position: fixed;bottom: 5vh;color: #555;display:none;}
+.instruction{width: 100%;height: 100vh;display: none;}
+.instruction p{position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);}
+.congrats{width: 100%;height: 100vh;display: none;}
+.congrats p{position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);}
+.container{height: 100vh;width:100%;display: flex;justify-content:center;align-content:center;position: relative;background-image: url('images/bg.jpg');background-size: cover;display: none;}
+.container left{width: 975px;height: 100vh;display: flex;justify-content: center;align-items:space-between;flex-direction:column;}
+.container left div{z-index: 10;display: flex;justify-content:flex-start;align-items:center;flex-direction:row;}
+.container left div div{width: 160px;height: 160px;float: left;}
+.container left div div img{width: 160px;height: 160px;}
+.container left div ul{width: 640px;height: 160px;display: flex;justify-content:center;align-items:center;flex-direction:row;}
+.container left div ul li{cursor: default;border-radius: 10px;display: flex;flex-direction: column;align-items: center;justify-content: space-around;width: 80px;height: 160px;}
+.container left div ul li div{position: relative;width: 100%;display: flex;justify-content:center;align-items:center;}
+/*eye*/.container left div ul li div:nth-child(2) i{padding: 10px;border-radius: 50px;position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);font-size: 25px;color: rgb(0,0,0,0);text-shadow: 100px 100px 100px #111;cursor: pointer;display: none;transition-duration:0.5s;display:none;}
+.container left div ul li div:nth-child(2) i:hover{color: #555;background-color:rgb(200,200,200,0.5);}
+.container left div ul li div p{color: #000;height: 25px;line-height: 25px;width: 100%;text-align:center;font-size: 10px;}
+.container left div ul li div img{width: 100%;height: 110px;}
+.container left div ul li div:nth-child(3) i{font-size: 10px;padding-right: 2px;color: #555;}
+.container left div ul li div:nth-child(3) p{letter-spacing: 1px;font-family: 'Rajdhani', sans-serif;font-size: 12px;}
+.container left div ul li div:nth-child(1) p{font-family:verdana;font-size: 9px;letter-spacing:1px;}
+.container left .side_places #logo{z-index: 0;position:absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);display: flex;flex-direction: column;align-items: center;justify-content:center;}
+.container left .side_places #logo p:nth-child(1){box-shadow:2px 2px 5px #aaa;}
+.container left .side_places #logo p span{font-family: 'Baloo 2', cursive;padding: 5px 25px 0px 25px;font-size:30px;border: 1px solid #000;}
+.container left .side_places #logo p span:nth-child(1){background-color: #000;color: #fff;}
+.container left .side_places #logo p span:nth-child(2){color: #000;background-color: #fff;}
+.container left .side_places{width: 100%;height:320px;display:flex;justify-content:space-between;align-items:center;position:relative;}
+.container left .bottom_places .start{display: flex;justify-content: center;align-items: center;flex-direction:column;}
+.container left .bottom_places .start i{font-size: 20px;padding:10px 20px;}
+.container left .bottom_places .start h1{font-size: 18px;letter-spacing: 2px;font-family: 'Play', sans-serif;}
+.container left .bottom_places .start p{font-size: 10px;text-align:center;padding:10px 20px;}
+.container left .bottom_places div{border: 1px solid rgb(0,0,0,0);}
+.container left .top_places div{border: 1px solid rgb(0,0,0,0);}
+.container left .side_places .left_places{transform:rotate(90deg);position: absolute;left: 0;top: 0;}
+.container left .side_places .left_places img{transform:rotate(-90deg);width: 100px;height: 80px;}
+.container left .side_places .right_places img{transform:rotate(90deg);width: 100px;height: 80px;}
+.container left .side_places .left_places .viewDetailsEYE{transform:rotate(-90deg);left: 18px;top: 20px;}
+.container left .side_places .right_places .viewDetailsEYE{transform:rotate(90deg);left: 18px;top: 20px;}
+.container left .side_places .right_places{transform:rotate(-90deg);position: absolute;right: 0;bottom: 0;}
+.container left .side_places #postbox{border-radius: 2vh;z-index: 5;background-color: rgb(237, 198, 114,1);display: flex;justify-content: center;align-items: center;flex-direction: column;position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);width: 480px;height: 200px;display: none;}
+.container left .side_places #postbox p{text-align:justify;padding: 10px 50px;color: #555;font-size: 12px;}
+.container left .side_places #postbox h1{font-family: 'Rajdhani', sans-serif;letter-spacing: 3px;font-size: 25px;color: #777;}
+.container left .side_places #postbox button{border-radius: 10vh;font-family: 'Play', sans-serif;letter-spacing: 1px;outline: none;padding: 5px 25px;cursor: pointer;border: none;color: #aaa;background-color: #fff;}
+.container left .side_places #postbox i{position: absolute;top: 15px;left: 20px;color: #aaa;}
+.container left .side_places #aboutPlace{display: flex;flex-direction: column;align-items: center;justify-content: center;width: 400px;height: 200px;background-color:rgb(0,0,0,0);position:absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);border-radius: 25px;border: 1px solid #000;display: none;}
+.container left .side_places #aboutPlace div{width: 100%;display: flex;flex-direction:column;justify-content:center;align-items:center;}
+.container left .side_places #aboutPlace div h1{letter-spacing: 1px;padding-bottom: 10px;border-bottom: 1px solid #ddd;font-family: 'Play', sans-serif;width: 80%;text-align:center;}
+.container left .side_places #aboutPlace div p{letter-spacing: 1px;font-family:verdana;text-align: center;font-size: 12px;width: 50%;padding: 5px 0px;}
+.container left .side_places #aboutPlace div button{text-align: center;font-size: 12px;padding: 7px 0px;margin: 0px 10px;border: none;outline: none;width: 90px;cursor:pointer;border-radius: 3px;background-color: rgb(0,0,0,0);}
+.container right{border-left: 1px solid #555;width: 30%;height: 100vh;display: flex;flex-direction:column;justify-content:space-between;align-items: center;}
+.container right div{width: 100%;height: 50vh;}
+.container right #rightTop{height: 60vh;position: relative;width: 100%;display: flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;}
+.container right #rightTop div{border-bottom: 1px solid #555;width: 100%;height: auto;display: flex;justify-content:center;align-items:center;flex-direction:column;}
+.container right #rightTop div p{font-family: 'Quicksand', sans-serif;width: 90%;padding: 1vh 5%;}
+.container right #rightTop #player1_DIV .player_name{display:flex;align-items:center;flex-direction:row;justify-content:space-between;}
+.container right #rightTop #player1_DIV .player_name #quit{float: right;color: #000;font-size: 10px;cursor: pointer;}
+.container right #rightTop div p:nth-child(2){text-align:center;}
+.container right #rightTop div p .up-down{float: right;cursor: pointer;}
+.container right #rightTop div .player_details_DIV ol{width: 100%;padding: 1vh 0px 2vh 0px;display: flex;justify-content:center;flex-direction:row;flex-wrap: wrap;align-items:center;}
+.container right #rightTop div .player_details_DIV ol li{font-family: 'Inria Sans', sans-serif;margin: 3px 5px;padding: 5px 15px 5px 15px;background-color: #000;color: #fff;border-radius: 50px;font-size: 15px;}
+.container right #rightTop div .player_details_DIV ol li i{margin-left: 10px;cursor: pointer;}
+.container right #rightTop #bank_DIV{position: absolute;bottom: 0;width: 100%;background-color: rgb(0,0,0,0);}
+.container right #rightBottom{width: 100%;position: relative;height: 40vh;display: flex;justify-content:flex-start;align-items:center;flex-direction:column;}
+.container right #rightBottom .scene {width: 100px;height: 100px; perspective: 2000px;margin: 0px 5%;}
+.container right #rightBottom .scene div div div i{color: #eee;}
+.container right #rightBottom .cube {width: 100%;height: 100%;position: relative;transform-style: preserve-3d;transition-duration: 1s;margin-top: 5vh;}
+.container right #rightBottom .cube__face{cursor: pointer;position: absolute;width: 100px;height: 100px;display: flex;justify-content:space-around;flex-direction: column;align-items:center;background-color: rgb(128, 128, 128);}
+.container right #rightBottom .cube__face div{display: flex;justify-content: space-evenly;align-items:center;flex-direction: row;width: 100%;} 
+.container right #rightBottom #turn_info{width: 175px;background-color: #00ff84;color: #000;text-align: center;margin-top:1vh;padding: 5px 10px;border-radius: 10px;}
+.cube__face--front  { transform: rotateY(  0deg) translateZ(50px);}
+.cube__face--right  { transform: rotateY( 90deg) translateZ(50px);}
+.cube__face--back   { transform: rotateY(180deg) translateZ(50px);}
+.cube__face--left   { transform: rotateY(-90deg) translateZ(50px);}
+.cube__face--top    { transform: rotateX( 90deg) translateZ(50px);}
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(50px);}
+.container right #rightBottom .colorPallete{box-shadow:0px 2px 5px rgb(150,150,150,0.5);width: 100%;height: 50px;position:absolute;bottom: 27px;display: flex;flex-direction: row;justify-content:space-between;align-items:center;}
+.container right #rightBottom .colorPallete ol{display: none;justify-content:center;flex-direction:row;align-items:center;width:90%;}
+.container right #rightBottom .colorPallete ol li{cursor: pointer;width: 25px;height: 25px;margin: 0px 10px;}
+.container right #rightBottom .colorPallete ol li:hover{transform:scale(1.2);transition-duration:0.5s;}
+.container right #rightBottom .colorPallete p{padding: 0px 30px;}
+.container right #rightBottom .colorPallete span{padding: 0px 20px;cursor: pointer;font-size: 12px;width:10%;}
+@keyframes heartPump{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.15);}
+	100%{transform: scale(1);}
+}
